@@ -1,0 +1,28 @@
+.bg-parallax {
+  @include media-breakpoint-up(sm) {
+    background-attachment: fixed;
+  }
+}
+
+@each $bp_value, $bp_size in $grid-breakpoints {
+   .shadow-hover-#{$bp_value} {
+    transition: all .32s ease-in-out !important;
+
+    &:hover {
+      @extend .shadow-#{$bp_value} !optional;
+    }
+  }
+}
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 10px;
+  }
+}
+
+.moveUpDown {
+  animation: MoveUpDown 4.2s ease-in-out infinite;
+}

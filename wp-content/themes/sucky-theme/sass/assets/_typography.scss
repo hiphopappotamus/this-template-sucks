@@ -1,0 +1,21 @@
+@import './variables';
+
+@for $i from 1 through 3 {
+ h#{$i},
+ .h#{$i} {
+  font-family: $accent_font;
+ }
+}
+
+@for $j from 4 through 6 {
+ h#{$j},
+ .h#{$j} {
+  font-family: $headings;
+ }
+}
+
+p,
+li,
+a {
+ font-family: $body_font;
+}

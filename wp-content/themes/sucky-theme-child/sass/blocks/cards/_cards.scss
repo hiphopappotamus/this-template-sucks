@@ -1,0 +1,52 @@
+// also find the styles for the cards on archive pages here
+
+.card {
+ & {
+  transition: all .32s ease-in-out;
+ }
+
+ &__spoilers {
+  &.justify-content-end {
+   &,
+   .card__spoilers--txt {
+    top: 0;
+   }
+  }
+  &--txt {
+   top: -65px;
+   text-transform: uppercase;
+   font-weight: $font-weight-bolder;
+   letter-spacing: 1.25px;
+  }
+ }
+
+ &__imgTop {
+  height: 234px;
+  position: relative;
+  width: 100%;
+  display: block;
+
+  &--img {
+   width: auto;
+   height: 101%;
+   object-fit: cover;
+   object-position: top;
+   aspect-ratio: 16/9;
+   position: absolute;
+   left: 0;
+   top: 0;
+  }
+ }
+}
+
+.archive {
+ .card {
+  &__spoilers {
+   &--txt {
+    @include media-breakpoint-up(md) {
+     top: -7px !important;
+    }
+   }
+  }
+ }
+}

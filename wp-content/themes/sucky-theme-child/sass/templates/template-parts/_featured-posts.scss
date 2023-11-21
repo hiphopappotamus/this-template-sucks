@@ -1,0 +1,11 @@
+.featured_post {
+ &--figure {
+  height: 200px;
+  overflow: hidden;
+
+  &Img {
+   height: 101%;
+   object-fit: cover;
+  }
+ }
+}

@@ -1,0 +1,22 @@
+// TODO: make focus outline color nice n bright
+
+.carousel {
+  height: calc(90px / 0.2);
+  z-index: 0;
+
+ &-inner {
+   height: 100%;
+ }
+
+ &-item {
+  height: 100%;
+
+  &__inner {
+   max-width: 80%;
+
+   @media (min-width: 768px) {
+    max-width: 70%;
+   }
+  }
+ }
+}

@@ -1,0 +1,8 @@
+node_modules/
+.htaccess
+.env
+.DS_Store
+**/.DS_Store
+wp-content/uploads
+package-lock.json
+local-xdebuginfo.php

@@ -1,0 +1,26 @@
+// @extend figure and figcaption styles from bootstrap
+a {
+ transition: all .32s ease-in-out;
+}
+
+figure {
+ @extend .figure;
+}
+
+figcaption {
+ @extend .figure-caption;
+ @extend .ps-0;
+ @extend .pt-2;
+}
+
+.figure-no-width {
+ figure {
+  width: unset !important;
+ }
+}
+
+.target-blank {
+ i {
+  padding: 3px;
+ }
+}

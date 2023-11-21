@@ -1,0 +1,38 @@
+nav.navigation.post-navigation {
+ 
+ .nav-links {
+  @extend .grid;
+
+  .nav-next,
+  .nav-previous {
+   @extend .g-col-6;
+
+   a {
+    width: 100%;
+    display: flex;
+   }
+  }
+
+  .nav-next {
+   a {
+    text-align: start;
+    justify-content: flex-start;
+   }
+  }
+
+  .nav-previous {
+   a {
+    text-align: end;
+    justify-content: flex-end;
+   }
+  }
+
+  > div:last-child {
+   a {
+    text-align: end;
+   }
+  }
+
+ }
+ 
+}

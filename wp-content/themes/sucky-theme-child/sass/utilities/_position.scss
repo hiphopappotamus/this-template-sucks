@@ -1,0 +1,8 @@
+// @import '../assets/variables';
+
+@each $position, $value in $z-positions {
+ // @debug $value;
+ .z-#{$position} {
+  z-index: #{$value};
+ }
+}

@@ -1,0 +1,46 @@
+// https://github.com/sass-mq/sass-mq
+// https://sass-guidelin.es/#the-7-1-pattern
+// https://css-tricks.com/sass-techniques-from-the-trenches/
+// https://www.sitepoint.com/8-tips-help-get-best-sass/
+// https://github.com/Famolus/awesome-sass
+// Custom.scss
+
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "./bootstrap/functions";
+
+// 2. Include any default variable overrides here
+
+// 2a. Include remainder of required Bootstrap stylesheets
+// @import "../node_modules/bootstrap/scss/variables";
+@import "./bootstrap/mixins";
+@import './assets/variables'; // use this one to avoid broken vars should Bootstrap recieve an update
+// @import './mixins/mixins';
+@import './utilities/breakpoints';
+@import './utilities/position';
+@import './utilities/overrides';
+
+@import './assets/typography';
+@import './assets/effects';
+
+// 4. Include any default map overrides here
+
+// 5. Include remainder of required parts
+@import "./bootstrap/maps";
+@import "./bootstrap/root";
+
+// 6. Optionally include any other parts as needed
+@import "./bootstrap/utilities";
+@import "./bootstrap/reboot";
+@import "./bootstrap/type";
+@import "./bootstrap/images";
+@import "./bootstrap/containers";
+@import "./bootstrap/grid";
+@import "./bootstrap/helpers";
+
+// 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
+@import "./bootstrap/api";
+
+// ======== custom styles! ======== //
+@import './theme-options/main';
+@import './templates/templates';
+@import './blocks/blocks';

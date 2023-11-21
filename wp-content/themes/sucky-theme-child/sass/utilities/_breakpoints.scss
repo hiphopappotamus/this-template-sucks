@@ -1,0 +1,27 @@
+@use "sass:map";
+
+// TODO: figure out how to incorporate Bootstrap API stuff???
+$responsive-viewheights: (
+ values: (
+  25: 25vh, 
+  50: 50vh, 
+  75: 75vh, 
+  85: 85vh, 
+  100: 100vh
+ ),
+);
+
+
+@each $value, $size in $grid-breakpoints {
+ $sizes: map.get($responsive-viewheights, values);
+ // $test: map.get($utilities, "viewport-height", values);
+
+ // @debug $test;
+ @each $beep, $boop in $sizes {
+  .vh-#{$value}-#{$beep} {
+   @include media-breakpoint-up($value)  {
+     height: #{$boop};
+    }
+   }
+ }
+}

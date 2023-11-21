@@ -1,0 +1,43 @@
+{
+    "key": "group_64d5384261df3",
+    "title": "The Sandbox",
+    "fields": [
+        {
+            "key": "field_64d53844da678",
+            "label": "",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Welcome to the sandbox! You will find my template code in wp-content\/themes\/sucky-theme-child\/page-templates\/sandbox.php. That's where I'm brain dumping some code ideas!",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "2365"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1691695253
+}

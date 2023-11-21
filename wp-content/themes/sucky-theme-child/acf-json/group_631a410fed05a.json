@@ -1,0 +1,567 @@
+{
+    "key": "group_631a410fed05a",
+    "title": "Section Options",
+    "fields": [
+        {
+            "key": "field_63222e9a81bd5",
+            "label": "Block Options",
+            "name": "",
+            "aria-label": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 0
+        },
+        {
+            "key": "field_63222b81fcbb6",
+            "label": "Block Title",
+            "name": "layout_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Add a custom title to this block to help differentiate between multiple blocks.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6332de271851c",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6332de271851c",
+            "label": "Add Layout Thumbnail",
+            "name": "add_layout_thumbnail",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "Use a thumbnail image instead of text to differentiate this block.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_6332de668d416",
+            "label": "Layout Thumbnail",
+            "name": "layout_thumbnail",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6332de271851c",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "thumbnail"
+        },
+        {
+            "key": "field_631a40836e44c",
+            "label": "",
+            "name": "options",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_631b4f35abf84",
+                    "label": "ID",
+                    "name": "section_id",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_631b4f3dabf85",
+                    "label": "Class",
+                    "name": "section_class",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_631b4f5cabf86",
+                    "label": "Background Image",
+                    "name": "section_background_image",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_631b4fb8d3b62",
+                    "label": "Background Color",
+                    "name": "section_background_color",
+                    "aria-label": "",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "enable_opacity": 1,
+                    "return_format": "string"
+                },
+                {
+                    "key": "field_631b4fc8d3b63",
+                    "label": "Text Color",
+                    "name": "section_text_color",
+                    "aria-label": "",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "enable_opacity": 0,
+                    "return_format": "string"
+                },
+                {
+                    "key": "field_64bf2c5863aaa",
+                    "label": "Include Gradient Overlay",
+                    "name": "include_gradient_overlay",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "Include a gradient overlay on the background to help with text legibility.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "ui_on_text": "",
+                    "ui_off_text": "",
+                    "ui": 1
+                },
+                {
+                    "key": "field_64ced203a3737",
+                    "label": "Main Gradient Color",
+                    "name": "main_gradient_color",
+                    "aria-label": "",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_64bf2c5863aaa",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "enable_opacity": 1,
+                    "return_format": "string"
+                },
+                {
+                    "key": "field_64ced25304c56",
+                    "label": "Mix Blend Mode",
+                    "name": "mix_blend_mode",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_64bf2c5863aaa",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "normal": "Normal",
+                        "color": "Color",
+                        "color-burn": "Color Burn",
+                        "color-dodge": "Color Dodge",
+                        "darken": "Darken",
+                        "difference": "Difference",
+                        "exclusion": "Exclusion",
+                        "hard-light": "Hard Light",
+                        "hue": "Hue",
+                        "lighten": "Lighten",
+                        "luminosity": "Luminosity",
+                        "multiply": "Multiply",
+                        "overlay": "Overlay",
+                        "plus-lighter": "Plus Lighter",
+                        "saturation": "Saturation",
+                        "screen": "Screen",
+                        "soft-light": "Soft Light"
+                    },
+                    "default_value": "normal",
+                    "return_format": "array",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "ui": 1,
+                    "ajax": 1,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_631b4fefd3b64",
+                    "label": "Enable Background Parallax",
+                    "name": "enable_background_parallax",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "ui": 0,
+                    "ui_on_text": "",
+                    "ui_off_text": ""
+                },
+                {
+                    "key": "field_631fa1aa695b1",
+                    "label": "Background Scroll Speed",
+                    "name": "background_scroll_speed",
+                    "aria-label": "",
+                    "type": "number",
+                    "instructions": "Default: 3 (higher number = slower scroll)",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_631b4fefd3b64",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": 3,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "min": "",
+                    "max": 10,
+                    "step": ""
+                },
+                {
+                    "key": "field_631ca5a203ea4",
+                    "label": "Adjust Outer Content Width",
+                    "name": "adjust_outer_content_width",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "ui": 0,
+                    "ui_on_text": "",
+                    "ui_off_text": ""
+                },
+                {
+                    "key": "field_631ca199e5ae8",
+                    "label": "Width (outer container)",
+                    "name": "section_width",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "Choose what screen size to switch the parent container to full width, or choose \"Full Width\" to keep the section full-width across all sizes.",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_631ca5a203ea4",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "sm": "Small (phone portrait)",
+                        "md": "Medium (phone landscape, tablet)",
+                        "lg": "Large (laptop, tablet landscape)",
+                        "xl": "Extra large (desktop, 1920x1080 resolution)",
+                        "xxl": "Retina (2000px resolution and up)",
+                        "fluid": "Full width (across all devices, default)"
+                    },
+                    "default_value": "fluid",
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 1,
+                    "ajax": 1,
+                    "return_format": "array",
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_631ca5f3fce50",
+                    "label": "Adjust Inner Content Width",
+                    "name": "adjust_inner_content_width",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_631ca5a203ea4",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "ui": 0,
+                    "ui_on_text": "",
+                    "ui_off_text": ""
+                },
+                {
+                    "key": "field_631ca32fba85c",
+                    "label": "Width (inner container)",
+                    "name": "section_inner_width",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "Choose what screen size to switch the inner container to full width, or choose \"Full Width\" to keep the section full-width across all sizes.",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_631ca5f3fce50",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "sm": "Small (phone portrait)",
+                        "md": "Medium (phone landscape, tablet)",
+                        "lg": "Large (laptop, tablet landscape)",
+                        "xl": "Extra large (desktop, 1920x1080 resolution)",
+                        "xxl": "Retina (2000px resolution and up)",
+                        "fluid": "Full width (across all devices, default)"
+                    },
+                    "default_value": "fluid",
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 1,
+                    "ajax": 1,
+                    "return_format": "array",
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_634946b8278ea",
+                    "label": "Inner container classes",
+                    "name": "inner_container_classes",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_64b83b2813995",
+                    "label": "Disable Layout",
+                    "name": "disable_layout",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "ui_on_text": "",
+                    "ui_off_text": "",
+                    "ui": 1
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/acf-flex-content"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "permalink",
+        "the_content",
+        "excerpt",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "page_attributes",
+        "featured_image",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": false,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1691276374
+}
