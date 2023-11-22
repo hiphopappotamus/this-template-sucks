@@ -17,11 +17,13 @@ switch(true) {
     $g_col_classes .= ' g-col-md-' . $num;
     break;
   case (12 / $num === 4):
+    $g_col_classes .= ' g-col-md-6 g-col-xl-' . $num;
+    break;
   case (12 / $num === 3):
     $g_col_classes .= ' g-col-md-6 g-col-lg-' . $num;
     break;
   default:
-    return;
+    12 / $num === 1;
     break;
 }
 
