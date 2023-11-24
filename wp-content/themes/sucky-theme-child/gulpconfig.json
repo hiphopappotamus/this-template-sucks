@@ -1,6 +1,6 @@
 {
   "browserSyncOptions": {
-    "proxy": "this-website-sucks.local",
+    "proxy": "",
     "files": ["./css/*.css", "./sass/*.scss", "./sass/**/_*.scss", "js/*.js", "./**/*.php", "./**/**/*.php"],
     "host": ""
   },
