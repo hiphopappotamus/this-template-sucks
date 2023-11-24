@@ -751,6 +751,54 @@
                     "display": "block",
                     "sub_fields": [
                         {
+                            "key": "field_655e862374d54",
+                            "label": "Add Section Intro",
+                            "name": "add_section_intro",
+                            "aria-label": "",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": "",
+                            "ui": 1
+                        },
+                        {
+                            "key": "field_655e863874d55",
+                            "label": "",
+                            "name": "card_section_intro",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_655e862374d54",
+                                        "operator": "==",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 0,
+                            "delay": 0
+                        },
+                        {
                             "key": "field_64ea69e0f8ba4",
                             "label": "Card Type",
                             "name": "card_type",
@@ -803,6 +851,24 @@
                             "ui": 1,
                             "ajax": 1,
                             "placeholder": ""
+                        },
+                        {
+                            "key": "field_655e87b065a44",
+                            "label": "Cards (click to expand)",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "accordion",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "open": 0,
+                            "multi_expand": 0,
+                            "endpoint": 0
                         },
                         {
                             "key": "field_64eb7d1f015a0",
@@ -1108,6 +1174,110 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_655e6b71c4cfd": {
+                    "key": "layout_655e6b71c4cfd",
+                    "name": "video_embed",
+                    "label": "Video Embed",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_655e780a07509",
+                            "label": "Include Dropshadow",
+                            "name": "include_dropshadow",
+                            "aria-label": "",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": "",
+                            "ui": 1
+                        },
+                        {
+                            "key": "field_655e78230750a",
+                            "label": "Size",
+                            "name": "dropshadow_size",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_655e780a07509",
+                                        "operator": "==",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "sm": "Small",
+                                "regular": "Regular (default)",
+                                "lg": "Large"
+                            },
+                            "default_value": "regular",
+                            "return_format": "array",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 1,
+                            "ajax": 1,
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_655e6b77c4d00",
+                            "label": "",
+                            "name": "main_oEmbed",
+                            "aria-label": "",
+                            "type": "oembed",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "width": "",
+                            "height": ""
+                        },
+                        {
+                            "key": "field_655e6df2fe693",
+                            "label": "Section Options",
+                            "name": "section_options",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_631a410fed05a"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "min": "",
@@ -1141,5 +1311,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1699124400
+    "modified": 1700694013
 }

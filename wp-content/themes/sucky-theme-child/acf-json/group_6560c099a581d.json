@@ -1,11 +1,11 @@
 {
-    "key": "group_6516f3be0f139",
-    "title": "Contains Spoilers",
+    "key": "group_6560c099a581d",
+    "title": "Page Background Color",
     "fields": [
         {
-            "key": "field_6516f3c0db3a0",
-            "label": "",
-            "name": "add_spoilers_tag",
+            "key": "field_6560c09b74d18",
+            "label": "Change background color of page",
+            "name": "change_background_color_of_page",
             "aria-label": "",
             "type": "true_false",
             "instructions": "",
@@ -23,55 +23,40 @@
             "ui": 1
         },
         {
-            "key": "field_651b29ca5cacc",
-            "label": "Customize Text",
-            "name": "customize_text",
-            "aria-label": "",
-            "type": "true_false",
-            "instructions": "Default: \"Spoilers ahead!\"",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "50",
-                "class": "",
-                "id": ""
-            },
-            "message": "",
-            "default_value": 0,
-            "ui_on_text": "",
-            "ui_off_text": "",
-            "ui": 1
-        },
-        {
-            "key": "field_651b29e15cacd",
+            "key": "field_6560c119fdaac",
             "label": "",
-            "name": "custom_spoiler_text",
+            "name": "page_background_color",
             "aria-label": "",
-            "type": "text",
+            "type": "color_picker",
             "instructions": "",
             "required": 0,
             "conditional_logic": [
                 [
                     {
-                        "field": "field_651b29ca5cacc",
+                        "field": "field_6560c09b74d18",
                         "operator": "==",
                         "value": "1"
                     }
                 ]
             ],
             "wrapper": {
-                "width": "50",
+                "width": "",
                 "class": "",
                 "id": ""
             },
             "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
+            "enable_opacity": 1,
+            "return_format": "string"
         }
     ],
     "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "default"
+            }
+        ],
         [
             {
                 "param": "post_type",
@@ -91,6 +76,13 @@
                 "param": "post_type",
                 "operator": "==",
                 "value": "book-reviews"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
             }
         ]
     ],
@@ -117,6 +109,6 @@
     ],
     "active": true,
     "description": "",
-    "show_in_rest": 0,
-    "modified": 1696279428
+    "show_in_rest": 1,
+    "modified": 1700840306
 }
