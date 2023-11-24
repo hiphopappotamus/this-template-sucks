@@ -60,6 +60,11 @@ $offcanvas_options_group = get_field('offcanvas_options_group', 'option'); // gr
 $offcanvas_responsive_activate = $offcanvas_options_group['offcanvas_responsive_activate'];
 $offcanvas_breakpoints = $offcanvas_options_group['offcanvas_breakpoints'];
 
+$change_background_color_of_page = get_field('change_background_color_of_page');
+$page_background_color = get_field('page_background_color');
+
+$switch_page_bg_color = $change_background_color_of_page ? 'style="background-color:' . $page_background_color . ';"' : '';
+
 
 ?>
 
@@ -112,7 +117,7 @@ if($slug === 'the-sandbox') {
 <script src="https://kit.fontawesome.com/21c20b6f66.js" crossorigin="anonymous"></script>
 </head>
 
-<body <?php body_class($sandbox_class); ?>>
+<body <?php body_class($sandbox_class); ?> <?php echo $switch_page_bg_color; ?>>
  <?php wp_body_open(); ?>
  <div id="page" class="site">
   <a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e('Skip to content', 'sucky-theme'); ?></a>
